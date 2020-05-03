@@ -1,0 +1,23 @@
+This program is a Graphical User Interface (GUI) using Python.
+The tkinter package is used.
+This simple graphical simulation analyzes how defective memory on disk can spread.
+
+Condition for each scenarios are like this:
+install (new -> normal): 40%
+wear & tear (normal -> aged): 5%
+decay (aged -> defective): 10%
+repair (defective -> new): % of defective cells (total # of defective cells divided by total # of cells)
+prevention (normal -> new): 15%
+lemon (new -> defective): 5%
+neighbor (normal -> defective): 20% if one of the possible 8 (max) neighboring cells is defective
+
+Stats under different percentages:
+Condition	          New%	  Normal%	Aged%	Defective%
+Base	              29.02	  30.84	  13.15	  26.98
+Double install	    18.82	  34.24	  17.23	  29.71
+Double wear & tear	21.09	  13.15	  38.78	  26.98
+Double decay	      34.47	  31.52	  7.26	  26.76
+Double repair	      33.56	  30.61	  15.19	  20.63
+Double prevent	    24.04	  21.77	  31.75	  22.45
+Double lemon	      15.87	  23.58	  34.24	  26.3
+Double neighbor	    24.49	  20.18	  29.48	  25.85
